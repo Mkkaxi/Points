@@ -15,5 +15,6 @@ export default {
     background-color #fff
     margin-top 20px
     height 200px
+
     
 </style>

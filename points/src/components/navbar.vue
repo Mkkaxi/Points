@@ -83,8 +83,8 @@ export default {
           background-color #F9FAFB
       .button
         button
-          width 60px
-          height 30px
+          width 68px
+          height 36px
           background-color #007FFF
           border-radius 4px
           border none
@@ -94,9 +94,8 @@ export default {
           &:hover
             cursor pointer
             background #0876E4
-    .icon
-      .icon-lingdang
-        width 30px
-
-
+      .icon
+        width 50px
+        background-color red 
+        
 </style>
