@@ -1,5 +1,5 @@
 <template>
-  <div class="events"></div>
+  <div class="recommended">recommended</div>
 </template>
 
 <script>

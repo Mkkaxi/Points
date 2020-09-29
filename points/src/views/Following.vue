@@ -1,5 +1,5 @@
 <template>
-  <div class="events"></div>
+  <div class="following">following</div>
 </template>
 
 <script>

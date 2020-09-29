@@ -1,5 +1,5 @@
 <template>
-  <div class="events"></div>
+  <div class="android">android</div>
 </template>
 
 <script>

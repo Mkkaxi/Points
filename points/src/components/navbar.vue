@@ -5,7 +5,7 @@
         <img :src="logoURL" alt="">
       </div>
       <ul>
-        <li><router-link to="/home">首页</router-link></li>
+        <li><router-link to="/">首页</router-link></li>
         <li><router-link to="/pins">沸点</router-link></li>
         <li><router-link to="/topics">话题</router-link></li>
         <li><router-link to="/books">小册</router-link></li>
@@ -21,16 +21,26 @@
       <div class="icon">
         <i class="icon-lingdang iconfont"></i>
       </div>
+      <div class="headImg">
+        <img src="https://user-gold-cdn.xitu.io/2020/7/10/1733777ca13500c0?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="">
+      </div>
     </div>
+    <transition>
+      <v-label></v-label>
+    </transition>
   </div>
 </template>
 
 <script>
+import label from '@/components/label'
 export default {
   data() {
     return {
       logoURL: 'https://s3.pstatp.com/toutiao/xitu_juejin_web/img/logo.a7995ad.svg'
     }
+  },
+  components: {
+    'v-label': label
   }
 }
 </script>
@@ -40,10 +50,10 @@ export default {
     width 100%
     background-color #fff
     .wrapper
-      width 66%
       height 60px
       margin 0 auto
       display flex
+      justify-content center
       align-items center
       .logo
         margin-left 20px
@@ -60,6 +70,8 @@ export default {
           color #718CC0
           .router-link-active
             color rgb(0,127,255)
+          a  
+            color #71777C
           a:hover
             color rgb(0,127,255)
       .input
@@ -94,8 +106,18 @@ export default {
           &:hover
             cursor pointer
             background #0876E4
-      .icon
-        width 50px
-        background-color red 
+      .icon-lingdang
+        margin-left 22px
+        font-size 18px
+        color #71777C
+      .headImg
+        width 30px
+        height 30px
+        border-radius 50%
+        overflow hidden
+        margin-left 30px
+        img 
+          width 100% 
+          height 100%
         
 </style>

@@ -5,9 +5,9 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/home',
+    path: '/',
     name: 'Home',
-    component: () => import('../views/Home.vue')
+    component: () => import('@/views/Home.vue'),
   },
   {
     path: '/pins',
@@ -15,7 +15,7 @@ const routes = [
     component: () => import('@/views/Pins.vue')
   },
   {
-    path: '/topic',
+    path: '/topics',
     name: 'Topic',
     component: () => import('@/views/Topic.vue')
   },
@@ -28,6 +28,21 @@ const routes = [
     path: '/events',
     name: 'Events',
     component: () => import('@/views/Events.vue')
+  },
+  {
+    path: '/recommended',
+    name: 'Recommended',
+    component: () => import('@/views/Recommended.vue')
+  },
+  {
+    path: '/following',
+    name: 'Following',
+    component: () => import('@/views/Following.vue')
+  },
+  {
+    path: '/android',
+    name: 'Android',
+    component: () => import('@/views/Android.vue')
   }
 
 ]
