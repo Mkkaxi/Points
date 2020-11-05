@@ -1,20 +1,31 @@
 <template>
   <div id="app">
     <nav-bar></nav-bar>
+    <login v-if="showLogin"></login>
     <router-view/>
   </div>
 </template>
 
 <script>
 import navBar from "@/components/navbar"
+import login from "@/components/login"
 export default {
   components: {
-      navBar
+      navBar,
+      login
+  },
+  data() {
+    return {
+      showLogin: true
     }
+  },
+  method: {
+
+  }
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -39,7 +50,5 @@ export default {
     background-color #F4F5F5
     margin 0 auto
     padding-bottom 50px
-
-
 
 </style>
